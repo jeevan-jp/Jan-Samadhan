@@ -6,7 +6,7 @@
   <span class="flex-spacer"></span>
   <a mat-button *ngIf = "!auth.isAuthenticated" (click)="openDialog()"><span class="fa fa-sign-in fa-lg"></span>Login</a>
   <a mat-button *ngIf = "auth.isAuthenticated">Welcome {{auth.name}}</a>
-  <a mat-button *ngIf = "auth.isAuthenticated" (click)="auth.logout()"><span class ="fa fa-sign-out fa-lg">LogOut</span></a>
+  <a mat-button *ngIf = "auth.isAuthenticated" (click)="auth.logout()"><span class ="fa fa-sign-out fa-lg">Log Out</span></a>
 </mat-toolbar>
 
 <mat-menu #menu="matMenu">
@@ -18,5 +18,11 @@
   </a>
   <a mat-menu-item routerLink="/complaint">
     <span>All complaints</span>
+  </a>
+  <a *ngIf = "auth.isAuthenticated" mat-menu-item routerLink="/complaint">
+    <span>Your complaints</span>
+  </a>
+  <a *ngIf = "auth.isAuthenticated" mat-menu-item routerLink="/complaint">
+    <span>Department complaints</span>
   </a>
 </mat-menu>
