@@ -88,7 +88,7 @@ export class LoginComponent implements OnInit {
   openSnackBar(email): Observable<any> {
     // console.log('done');
     this.snack.open('Logged in as!', email, {
-      duration: 4000,
+      duration: 5000,
     });
     return;
   }
