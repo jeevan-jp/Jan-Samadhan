@@ -17,6 +17,7 @@ import { AuthService } from './auth.service';
 import { AuthService1 } from './auth2.service';
 import {routingComponents}  from './app-routing/app-routing.module';
 import { LogindepComponent } from './logindep/logindep.component';
+import { YourComplaintsComponent } from './components/your-complaints/your-complaints.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,8 @@ import { LogindepComponent } from './logindep/logindep.component';
     FooterComponent,
     HeaderComponent,
     routingComponents,
-    LogindepComponent
+    LogindepComponent,
+    YourComplaintsComponent
   ],
   imports: [
     BrowserModule,
