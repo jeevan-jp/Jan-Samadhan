@@ -1,0 +1,8 @@
+router-outlet {
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        background: url(../assets/images/backslant-home-top.svg) repeat-y 50% 0;
+        background-size: 100%;
+}
