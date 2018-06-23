@@ -13,6 +13,7 @@ import { SignupComponent } from '../components/signup/signup.component';
 import { AdminviewComponent } from '../adminview/adminview.component';
 import { ComplaintSortedComponent } from '../complaint-sorted/complaint-sorted.component';
 import { LogindepComponent } from '../logindep/logindep.component';
+import { YourComplaintsComponent } from '../components/your-complaints/your-complaints.component';
 
 export const routes:Routes = [
     { path: 'home', component: HomeComponent },
@@ -27,6 +28,7 @@ export const routes:Routes = [
     { path: 'signupDep', component: SignupComponent },
     { path: 'loginDep', component: LogindepComponent },
     { path: 'admin', component: AdminviewComponent },
+    { path: 'your-complaints', component: YourComplaintsComponent },
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path:'complaintSorted',component:ComplaintSortedComponent },
     { path: '**', redirectTo: 'pageNotFound', pathMatch: 'full' }
@@ -42,5 +44,17 @@ export const routes:Routes = [
 })
 
 export class AppRoutingModule { }
-export const routingComponents =[HomeComponent,AboutComponent,ComplaintsComponent,CompformComponent,
-  ContactusComponent,NotfoundComponent,LoginComponent,RegisterComponent,SignupComponent,AdminviewComponent,ComplaintSortedComponent];
+export const routingComponents = [
+  HomeComponent,
+  AboutComponent,
+  ComplaintsComponent,
+  CompformComponent,
+  ContactusComponent,
+  NotfoundComponent,
+  LoginComponent,
+  RegisterComponent,
+  SignupComponent,
+  AdminviewComponent,
+  ComplaintSortedComponent,
+  YourComplaintsComponent
+];
